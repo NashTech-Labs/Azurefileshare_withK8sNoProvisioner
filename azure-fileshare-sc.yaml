@@ -1,0 +1,8 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: azure-fileshare
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+
+#We can Replace <YOUR_REQUESTED_STORAGE> with the desired size for your PersistentVolumeClaim.

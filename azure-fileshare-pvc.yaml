@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: azure-fileshare-pvc
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: azure-fileshare
+  resources:
+    requests:
+      storage: <YOUR_REQUESTED_STORAGE>
